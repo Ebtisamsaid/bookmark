@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bookmark.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body class="mark">
+    <div class=" address">
+ <h1 class="d-flex justify-content-center align-items-center  my-5">BookMark</h1>
+ </div>
+ <h2 class="text-center" style='color: coral;' > <i class="fa-solid fa-bookmark" style="color: brown;"></i> Bookmark your favorite sites  <i class="fa-solid fa-bookmark" style="color: brown;"></i></h2>
+    
+ <div class="mb-3 w-75 mx-auto ">
+    <label for="bookMark" class="form-label"> <i class="fa-solid fa-book-bookmark pe-2"></i> Site Name</label>
+    <input oninput="validation()" type="text" class="form-control" id="bookMark" placeholder="Bookmark Name">
+  </div>
+
+  <div class="input mb-3 w-75 mx-auto  ">
+    <label for="uRl" class="form-label"> <i class="fa-solid fa-link pe-2"></i> Site URL</label>
+    <input oninput="validation()"  type="url" class="form-control " id="uRl" placeholder=" Website URL ">
+    <p id="invalidmsg" class="alert alert-danger d-none " > invalid URL</p>
+  </div> 
+ <div style="border-bottom: dotted 2px black;">
+    <button onclick="addSite()" class="btn btn-danger my-5 position-relative start-50  " id="submitBtn" >Add Website</button>
+    <button onclick="updateButn()" class="btn btn-danger my-5 position-relative start-50  d-none" id="updateBtn" >update Website</button>
+ </div>
+  
+<table class="table w-75 mx-auto mt-3">
+    <thead>
+        <tr>
+            <th>Index</th>
+            <th>Website Name</th>
+            <th>Visit</th>
+            <th>Delete</th>
+            <th>update</th>
+        </tr>
+    </thead>
+    <tbody id="item">
+      
+    </tbody>
+</table>
+
+
+
+
+    <script src="js/bookmark.js"></script>
+</body>
+</html>

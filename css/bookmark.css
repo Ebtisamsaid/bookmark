@@ -1,0 +1,26 @@
+h1{
+    font-size: 60px;
+        font-family: "Pacifico", cursive;
+        font-weight: 400;
+        font-style: normal;
+      
+ position:relative;
+    
+ 
+}
+.address{
+    border-bottom:dotted black 2px ;
+}
+  h1::before{
+    content: '';
+    background-color: #fec260;
+    width: 25%;
+    height: 25%;
+    left: 50%;
+    transform: translatex(-50%);
+   top: 70%;
+    position: absolute;
+    z-index: -1;
+  
+  }
+  
